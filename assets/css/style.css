@@ -11983,6 +11983,26 @@ textarea.form-control-lg {
   border: 2px solid #343a40 !important;
 }
 
+.border-orange {
+  border: 2px solid #fd7e14 !important;
+}
+
+.border-cyan {
+  border: 2px solid #17a2b8 !important;
+}
+
+.border-indigo {
+  border: 2px solid #6610f2 !important;
+}
+
+.border-pink {
+  border: 2px solid #e83e8c !important;
+}
+
+.border-teal {
+  border: 2px solid #20c997 !important;
+}
+
 .menu {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(214, 51, 132, 0.95));
 }
@@ -12026,6 +12046,7 @@ textarea.form-control-lg {
 .portfolio-box img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 .portfolio-box .portfolio-info {
   background-color: rgba(153, 38, 240, 0.75);

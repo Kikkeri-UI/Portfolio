@@ -1,39 +1,39 @@
-window.addEventListener('DOMContentLoaded',()=>{
-    filterProjects('all');
-})
+// window.addEventListener('DOMContentLoaded',()=>{
+//     filterProjects('all');
+// })
 
 
-const filterButtons = document.querySelectorAll('.btn-outline-primary');
-filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const selectedCategory = button.dataset.category;
-        filterProjects(selectedCategory);
-    });
-});
+// const filterButtons = document.querySelectorAll('.btn-outline-primary');
+// filterButtons.forEach(button => {
+//     button.addEventListener('click', () => {
+//         const selectedCategory = button.dataset.category;
+//         filterProjects(selectedCategory);
+//     });
+// });
 
-// ... (previous code remains the same)
+// // ... (previous code remains the same)
 
-function filterProjects(category) {
-    debugger;
-    const projectItems = document.querySelectorAll('.project-item');
+// function filterProjects(category) {
+//     debugger;
+//     const projectItems = document.querySelectorAll('.project-item');
   
-    projectItems.forEach(item => {
-      const projectCategory = item.querySelector('.caption p').textContent.trim();
-      const projectTitle = item.querySelector('.caption h4').textContent.trim();
+//     projectItems.forEach(item => {
+//       const projectCategory = item.querySelector('.caption p').textContent.trim();
+//       const projectTitle = item.querySelector('.caption h4').textContent.trim();
   
-      if (category === 'all') {
-        item.style.display = 'flex';
-      } else if (category === 'des-dev' &&
-         (projectTitle === 'Salt N Peppa' ||
-          projectTitle === 'Life Supplies' ||
-          projectTitle === 'Employee CRUD')) {
-        item.style.display = 'flex';
-      } else {
-        item.style.display = 'none';
-      }
-    });
+//       if (category === 'all') {
+//         item.style.display = 'flex';
+//       } else if (category === 'des-dev' &&
+//          (projectTitle === 'Salt N Peppa' ||
+//           projectTitle === 'Life Supplies' ||
+//           projectTitle === 'Employee CRUD')) {
+//         item.style.display = 'flex';
+//       } else {
+//         item.style.display = 'none';
+//       }
+//     });
     
-  }
+//   }
   
 
 
@@ -70,10 +70,6 @@ async function handleSubmit(event) {
     status.innerHTML = "Oops! There was a problem submitting your form";
   }
 }
-
-// function showToast() {
-//   toast.show();
-// }
 
 form.addEventListener("submit", handleSubmit);
 
